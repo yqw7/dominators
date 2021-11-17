@@ -29,6 +29,10 @@ def walruses():
 def abouthassan():
     return render_template("abouthassan.html")
 
+@app.route('/isabella/')
+def isabella():
+    return render_template("isabella.html")
+
 @app.route('/hawkers/')
 def hawkers():
     return render_template("hawkers.html")
