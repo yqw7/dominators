@@ -1,0 +1,28 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Isabella" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+        <div style="text-align: center">
+            <p>My name is Isabella and I'm a senior</p>
+            <p>I am currently applying to college and plan on studying international marketing or business</p>
+            <p>I have 2 brothers, named Stanley and Jasper</p>
+            <p>I also have two cats!</p>
+            <p>I am on our school's track and field team and marching band</p>
+            <p>I like to spend my free time playing video games like Valorant, Osu, and League of Legends</p>
+        </div>
+    </div>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
+
+</form>
+</body>
+</html>
