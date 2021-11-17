@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/Ethan')
+@app.route('/Ethan/')
 def stub2():
     return render_template("Ethan.html")
 
@@ -32,6 +32,10 @@ def abouthassan():
 @app.route('/isabella/')
 def isabella():
     return render_template("isabella.html")
+
+@app.route('/calissa/')
+def calissa():
+    return render_template("calissa.html")
 
 @app.route('/hawkers/')
 def hawkers():
