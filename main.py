@@ -21,6 +21,9 @@ def kangaroos():
 def walruses():
     return render_template("walruses.html")
 
+@app.route('/abouthassan/')
+def abouthassan():
+    return render_template("abouthassan.html")
 
 @app.route('/hawkers/')
 def hawkers():
