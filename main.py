@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/Ethan')
+def stub2():
+    return render_template("Ethan.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
