@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+<html lang="en">
+<meta charset="UTF-8">
+<title>Nicolas</title>
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+<h1 style="color:cornflowerblue;">Meet Nicolas!</h1>
+<body style="background-color:skyblue;">
+<div class="col-12">
+    <p>Hello, {{nickname}}!</p>
+</div>
+</body>
+<div class="col-12">
+    <form action="/nic" id="greet" method="POST" >
+        <label for="name">What's your name?</label>
+        <input name="name" id="name">
+        <input type="submit" value="Greetings!">
+    </form>
+</div>
+<img src="https://media0.giphy.com/media/mP8YqtjCNOB9HLyrn0/200w.gif?cid=82a1493b7t5i4khdgl6mj5s0b78y0l74djn62olfo42f7dh5&rid=200w.gif&ct=g" alt="">
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
+</html>
+
+
