@@ -1,11 +1,40 @@
-<!DOCTYPE html>
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TItle</title>
-</head>
-<body>
-    <p> AHHHHHHHHHH</p>
-</body>
-</html>
+<!- This variable sets name of browser tab  -->
+{% set project = "About Me- Ethan" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+<body style="background-image:url('/static/Cabin in the woods.gif');background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div class="col-12" style="color: white">
+        <h3> About Me - Ethan Guo </h3>
+        <p>Hello, my name is Ethan Guo and I'm currently a sophomore.</p>
+        <p>I have a younger sister, 2 dogs, and a cat.</p>
+        <p>Some of hobbies include fencing, reading and playing video games such as Dead Cells, Smash Ultimate and soon to be MK11.</p>
+    </div>
+    <div class="center-block">
+        <img src="/static/Cyclops.PNG" id="myImg" style="mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg); mask-repeat: no-repeat; mask-position: center">
+        <input type="button" onclick="changeImg()" value="Change" />
+        <script type="text/javascript">
+            function changeImg() {
+                var image = document.getElementById('myImg');
+                if (image.src.match("/static/Cyclops.PNG")) {
+                    image.src = "/static/dark.jpg";
+                }
+                else {
+                    image.src = "/static/Cyclops.PNG";
+                }
+            }
+        </script>
+        <img src="/static/Cyclops.PNG" id="asdf" style="mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg); mask-size: 100vmin; mask-repeat: no-repeat; mask-position: center">
+
+    </div>
+
+
+
+<a href="https://docs.google.com/document/d/11cBSfBfDJXizFQeEGC3qvqjwIzic5QQyVkWxspujZPM/edit"> This is my journal</a>
+{% endblock %}
+
+{% block background %}
+{% endblock %}
