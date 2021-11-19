@@ -37,6 +37,9 @@ def isabella():
 def calissa():
     return render_template("calissa.html")
 
+@app.route('/nicolas/')
+def nicolas():
+    return render_template("nicolas.html")
 
 @app.route('/hawkers/')
 def hawkers():
