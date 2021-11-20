@@ -1,5 +1,7 @@
 # import "packages" from flask
 from flask import Flask, render_template
+from wikipedia import requests
+from templates.nicolas.gameapi import api_bp
 
 # create a Flask instance
 app = Flask(__name__)
@@ -39,18 +41,23 @@ def calissa():
 
 @app.route('/nicolas/')
 def nicolas():
-    return render_template("nicolas.html")
+    return render_template("nicolas/nicolas.html")
 
 @app.route('/hawkers/')
 def hawkers():
     return render_template("hawkers.html")
 
+@app.route('/game', methods=['GET', 'POST'])
+def game():
+    url = "http://localhost:5000/api/game"
+    response = requests.request("GET", url)
+    return render_template("nicolas/game.html", game=response.json())
+
+app.register_blueprint(api_bp)
 
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
-
-
 
 # runs the application on the development server
 if __name__ == "__main__":
