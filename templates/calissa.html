@@ -1,33 +1,31 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-<!- This variable sets name of browser tab  -->
-{% set project = "AboutCalissa" %}
-
-<!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
 
     <style style="background-color:powderblue;">
 
         p {
             margin: 10px 10px 10px 10px;
-            font-family: 'Allerta';
-            color: white;
+            font-family: 'Barlow';
+            color: black;
 
         }
         h1{
             margin: 10px 10px 10px 10px;
-            font-family: 'Allerta';
-            color: white;
+            font-family: 'Barlow';
+            color: black;
         }
 
         body {
             color: white;
+            background-image: url('https://github.com/yqw7/dominators/blob/main/static/background-calissa.jpeg?raw=true');
+            background-size: cover;
         }
 
-    </style>
 
+    </style>
 
     </div>
 
@@ -39,17 +37,35 @@
     <p>I also have a lot of hobbies. I play basketball year-round, enjoy gardening, playing video games, as well as eating. Yes, eating is a hobby.
         I'd say there is a special art to good food. Yummy food (especially Italian food) is probably what I am most passionate about in regards to hobbies.</p>
 
+    {{ text }}
 
-    <img src="https://github.com/SlimeyTurtles/Rat-Homework/blob/main/static/about%20static/calissa%20static/Calissa1.PNG?raw=true" style="border:20px;margin:20px"width="257" height="518"/>
+    <button onclick="Toggle()">Toggle!</button>
+    <img id = 'img1' src = 'https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true'/>
 
-    <img src="https://github.com/SlimeyTurtles/Rat-Homework/blob/main/static/about%20static/calissa%20static/Calissa2.jpeg?raw=true"/>
+    <table style = "width:400px" >
+        <tr>
+            <th>Tri 1</th>
+            <th>Tri 2</th>
+        </tr>
+        <tr>
+            <td><a href="https://docs.google.com/document/d/1M_jU_NzcbDCb40K4yJio2Le8LXt5a7TuSz09csn4ihg/edit?usp=sharing">Pair Share Journal</a></td>
+            <td><a href="https://docs.google.com/document/d/1OOVfFVMa9uzUVX7ZE6eb6zbkqH2unkIZnsF4JkRyONI/edit?usp=sharing">Pair Share Journal</a></td>
+        </tr>
+    </table>
+
+    <script>
 
 
-{% endblock %}
+        function Toggle(){
+            if (document.getElementById('img1') == "https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true") {
+                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/cdog.jpeg?raw=true"
+            }
+            else{
+                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true"
+            }
+        }
+    </script>
 
-<!- This is turning off birds background from base.html -->
-
-{% block background %}
 
 {% endblock %}
 
