@@ -21,5 +21,12 @@
 
 ## Week 1
 
+Task | Evidence |
+| :---- | :---- | 
+| Design - Wiki Theme, Brain Write & Wire Frame |
+| Technicals - 10  to 12 key ideas |
+| Github - On Wiki containing Management Plan |
+| Deployment - Wiki Plan, Hardware and Frequency |
+| Scrum Board - Assignments and Backlog |
 
 
