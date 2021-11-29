@@ -46,12 +46,5 @@ def get_game():
         _init_games()
     return jsonify(random.choice(games))
 
-@api_bp.route('/games')
-def get_games():
-    if len(games) == 0:
-        _init_games()
-    return jsonify(games)
-
-
 if __name__ == "__main__":
     print(random.choice(games_list))
