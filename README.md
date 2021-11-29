@@ -4,6 +4,9 @@
 
 ## Dominators Project Credits
 
+|[Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|[Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|
+| :---   | :--- |
+
  Name | Github Profile | Journal Links
 | :---- | :---- | :---- |
 | Hassan Allam | [@RiceSush1](https://github.com/ricesush1) | [ Hassan Allam Journal]() 
