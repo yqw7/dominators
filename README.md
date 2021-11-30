@@ -31,13 +31,9 @@ Task | Evidence |
 
 ### Week 0
 
-Role | Person |
+Task | Evidence |
 | :---- | :---- | 
-| Design - Wiki Theme, Brain Write & Wire Frame |
-| Technicals - 10  to 12 key ideas |
-| Github - On Wiki containing Management Plan |
-| Deployment - Wiki Plan, Hardware and Frequency |
-| Scrum Board - Assignments and Backlog |
-
+| Scrum Boards and Issue for each individual (.5 to seed) |
+| GitHub plan and commits by each individual (.5 to seed) |
 
 
