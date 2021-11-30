@@ -54,11 +54,11 @@
     </table>
 
     <script>
-
-
         function Toggle(){
-            if (document.getElementById('img1') == "https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true") {
-                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/cdog.jpeg?raw=true"
+            const current = document.getElementById('img1').src;
+            if (current === "https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true")
+            {
+                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/cdog.png?raw=true"
             }
             else{
                 document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true"
