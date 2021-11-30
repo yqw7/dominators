@@ -7,7 +7,7 @@
 |[Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|[Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|
 | :---   | :--- |
 
-| Name | Github Profile | Journal Links | Role | Commits | 
+Name | Github Profile | Journal Links | Role | Commits |
 | :---- | :---- | :---- |
 | Hassan Allam | [@RiceSush1](https://github.com/ricesush1) | [ Hassan Allam Journal]() | Deployment Manager |
 | Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [ Nicolas Mounier Journal](https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit) | Scrum Master |
