@@ -8,7 +8,7 @@
 | :---   | :--- |
 
 Name | Github Profile | Journal Links | Role | Commits |
-| :---- | :---- | :---- |
+| :---- | :---- | :---- | :---- | :---- 
 | Hassan Allam | [@RiceSush1](https://github.com/ricesush1) | [ Hassan Allam Journal]() | Deployment Manager |
 | Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [ Nicolas Mounier Journal](https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit) | Scrum Master |
 | Ethan Guo | [@FierceExplorer](https://github.com/FierceExplorer) | [Ethan Guo Journal](https://docs.google.com/document/d/11cBSfBfDJXizFQeEGC3qvqjwIzic5QQyVkWxspujZPM/edit?usp=sharing) | Technical Officer |
