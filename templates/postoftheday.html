@@ -1,4 +1,4 @@
-{% include "layouts/navbar.html" %}
+{% extends "layouts/navbar.html" %}
 <body>
 <br>
 <h1 class="text-center">Post of the Day</h1>
@@ -6,6 +6,6 @@
 <div class="container">
     <p>The current daily top post of r/gaming:</p>
     <h2 style="font-style: italic">{{rdata[0]}}</h2>
-    <!--<img src="{{rdata[1]}}" width="100%"> -->
+    <img src="{{rdata[1]}}" width="100%">
 </div>
 </body>
