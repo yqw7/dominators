@@ -1,6 +1,8 @@
 # Dominators Project P4
 
 ## Table of Contents
+[Contributors](https://github.com/yqw7/dominators/blob/main/README.md#dominators-project-credits)
+[Time Box]()
 
 ## Dominators Project Credits
 
