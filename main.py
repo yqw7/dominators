@@ -1,6 +1,10 @@
 # import "packages" from flask
+from flask import Flask, render_template, request
+from redditapi import getRedditData
 from flask import Flask, render_template
-import requests
+# from wikipedia import requests
+from templates.nicolas.gameapi import api_bp
+
 # create a Flask instance
 app = Flask(__name__)
 
@@ -14,6 +18,9 @@ def index():
 def stub2():
     return render_template("Ethan.html")
 
+@app.route('/postoftheday/')
+def postoftheday():
+    return render_template("postoftheday.html", rdata=getRedditData())
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
@@ -47,8 +54,6 @@ def hawkers():
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
-
-
 
 # runs the application on the development server
 if __name__ == "__main__":
