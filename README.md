@@ -2,7 +2,7 @@
 
 ## Table of Contents
 [Contributors](https://github.com/yqw7/dominators/blob/main/README.md#dominators-project-credits)
-[Time Box]()
+[Time Box](https://github.com/yqw7/dominators/blob/main/README.md#time-box)
 
 ## Dominators Project Credits
 
