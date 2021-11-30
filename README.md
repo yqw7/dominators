@@ -15,7 +15,9 @@ Name | Github Profile | Journal Links | Role | Commits |
 | Isabella Yan | [@yqw7](https://github.com/yqw7) | [ Isabella Yan Journal](https://docs.google.com/document/d/1ru-krw9LxC4oGohZRF2XpdgwUlTE7nF5fdzvu13DCVo/edit?usp=sharing) | GitHub Admin |
 | Calissa Tyrrell | [@CalissaT](https://github.com/CalissaT) | [Calissa Tyrrell Journal]() | Primary Designer | 
 
-## Week 1
+## Time Box
+
+### Week 1
 
 Task | Evidence |
 | :---- | :---- | 
@@ -25,7 +27,7 @@ Task | Evidence |
 | Deployment - Wiki Plan, Hardware and Frequency |
 | Scrum Board - Assignments and Backlog |
 
-## Week 0
+### Week 0
 
 Role | Person |
 | :---- | :---- | 
