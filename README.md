@@ -24,7 +24,7 @@ Name | Github Profile | Journal Links | Role | Commits |
 Task | Evidence |
 | :---- | :---- | 
 | Design - Wiki Theme, Brain Write & Wire Frame |
-| Technicals - 10  to 12 key ideas |
+| Technicals - 10  to 12 key ideas |![image](https://user-images.githubusercontent.com/89167174/144137051-94638e2d-4706-4467-9f9a-26c9dc3ec336.png)|
 | Github - On Wiki containing Management Plan |
 | Deployment - Wiki Plan, Hardware and Frequency |
 | Scrum Board - Assignments and Backlog |
