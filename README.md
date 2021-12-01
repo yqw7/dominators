@@ -17,6 +17,10 @@ Name | Github Profile | Journal Links | Role | Commits |
 | Isabella Yan | [@yqw7](https://github.com/yqw7) | [ Isabella Yan Journal](https://docs.google.com/document/d/1ru-krw9LxC4oGohZRF2XpdgwUlTE7nF5fdzvu13DCVo/edit?usp=sharing) | GitHub Admin | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
 | Calissa Tyrrell | [@CalissaT](https://github.com/CalissaT) | [Calissa Tyrrell Journal]() | Primary Designer | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
 
+## Policies 
+
+Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" collumns to track task progress.
+
 ## Time Box
 
 ### Week 1
