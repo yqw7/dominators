@@ -11,11 +11,11 @@
 
 Name | Github Profile | Journal Links | Role | Commits |
 | :---- | :---- | :---- | :---- | :---- 
-| Hassan Allam | [@RiceSush1](https://github.com/ricesush1) | [ Hassan Allam Journal]() | Deployment Manager |
-| Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [ Nicolas Mounier Journal](https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit) | Scrum Master |
-| Ethan Guo | [@FierceExplorer](https://github.com/FierceExplorer) | [Ethan Guo Journal](https://docs.google.com/document/d/11cBSfBfDJXizFQeEGC3qvqjwIzic5QQyVkWxspujZPM/edit?usp=sharing) | Technical Officer |
-| Isabella Yan | [@yqw7](https://github.com/yqw7) | [ Isabella Yan Journal](https://docs.google.com/document/d/1ru-krw9LxC4oGohZRF2XpdgwUlTE7nF5fdzvu13DCVo/edit?usp=sharing) | GitHub Admin |
-| Calissa Tyrrell | [@CalissaT](https://github.com/CalissaT) | [Calissa Tyrrell Journal]() | Primary Designer | 
+| Hassan Allam | [@RiceSush1](https://github.com/ricesush1) | [ Hassan Allam Journal]() | Deployment Manager | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
+| Nicolas Mounier | [@nicm2](https://github.com/nicm2) | [ Nicolas Mounier Journal](https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit) | Scrum Master | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
+| Ethan Guo | [@FierceExplorer](https://github.com/FierceExplorer) | [Ethan Guo Journal](https://docs.google.com/document/d/11cBSfBfDJXizFQeEGC3qvqjwIzic5QQyVkWxspujZPM/edit?usp=sharing) | Technical Officer | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
+| Isabella Yan | [@yqw7](https://github.com/yqw7) | [ Isabella Yan Journal](https://docs.google.com/document/d/1ru-krw9LxC4oGohZRF2XpdgwUlTE7nF5fdzvu13DCVo/edit?usp=sharing) | GitHub Admin | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
+| Calissa Tyrrell | [@CalissaT](https://github.com/CalissaT) | [Calissa Tyrrell Journal]() | Primary Designer | [Commits](https://github.com/yqw7/dominators/graphs/contributors) |
 
 ## Time Box
 
