@@ -28,7 +28,7 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 Task | Evidence |
 | :---- | :---- | 
 | Design - Wiki Theme, Brain Write & Wire Frame |
-| Technicals - 10  to 12 key ideas |![image](https://user-images.githubusercontent.com/89167174/144137051-94638e2d-4706-4467-9f9a-26c9dc3ec336.png)|
+| Technicals - 10  to 12 key ideas |Login page using firebase, Rating system using database (SQL), comment section using database, api for ap class information and statistics, search (filters), upload system, filtering/detection system (inappropriate comments), favoriting / saving system, pathway system (prerequisites/class to take)|
 | Github - On Wiki containing Management Plan |
 | Deployment - Wiki Plan, Hardware and Frequency |
 | Scrum Board - Assignments and Backlog |
