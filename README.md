@@ -31,7 +31,7 @@ Task | Evidence |
 | Technicals - 10  to 12 key ideas |Login page using firebase, Rating system using database (SQL), comment section using database, api for ap class information and statistics, search (filters), upload system, filtering/detection system (inappropriate comments), favoriting / saving system, pathway system (prerequisites/class to take)|
 | Github - On Wiki containing Management Plan | Completed by Isabella [contributing.md](https://github.com/yqw7/dominators/blob/main/CONTRIBUTING.md) |
 | Deployment - Wiki Plan, Hardware and Frequency | Completed by Hassan [Wiki](https://github.com/yqw7/dominators/wiki/Deployment) |
-| Scrum Board - Assignments and Backlog | Completed by Nicolas Mounier [Scrum Board](https://github.com/yqw7/dominators/projects/1) |
+| Scrum Board - Assignments and Backlog | Completed by Nicolas [Scrum Board](https://github.com/yqw7/dominators/projects/1) |
 
 ### Week 0
 
