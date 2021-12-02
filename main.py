@@ -1,4 +1,5 @@
 # import "packages" from flask
+import requests
 from flask import Flask, render_template, request
 from redditapi import getRedditData
 from flask import Flask, render_template
@@ -20,7 +21,19 @@ def stub2():
 
 @app.route('/calissa/')
 def calissa():
-    return render_template("calissa.html")
+    url = "https://google-translate1.p.rapidapi.com/language/translate/v2"
+
+    payload = "q=Hello%2C%20world!&target=es&source=en"
+    headers = {
+        'content-type': "application/x-www-form-urlencoded",
+        'accept-encoding': "application/gzip",
+        'x-rapidapi-host': "google-translate1.p.rapidapi.com",
+        'x-rapidapi-key': "d7c8c8031emshc7982f51947d6d4p19192fjsnc28f123f5152"
+    }
+
+    response = requests.request("POST", url, data=payload, headers=headers)
+    text = response.json()
+    return render_template("calissa.html", text=text)
 
 @app.route('/postoftheday/')
 def postoftheday():
