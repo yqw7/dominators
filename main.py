@@ -21,17 +21,14 @@ def stub2():
 
 @app.route('/calissa/')
 def calissa():
-    url = "https://google-translate1.p.rapidapi.com/language/translate/v2"
+    url = "https://burgers1.p.rapidapi.com/burgers"
 
-    payload = "q=Hello%2C%20world!&target=es&source=en"
     headers = {
-        'content-type': "application/x-www-form-urlencoded",
-        'accept-encoding': "application/gzip",
-        'x-rapidapi-host': "google-translate1.p.rapidapi.com",
+        'x-rapidapi-host': "burgers1.p.rapidapi.com",
         'x-rapidapi-key': "d7c8c8031emshc7982f51947d6d4p19192fjsnc28f123f5152"
     }
 
-    response = requests.request("POST", url, data=payload, headers=headers)
+    response = requests.request("GET", url, headers=headers)
     text = response.json()
     return render_template("calissa.html", text=text)
 
