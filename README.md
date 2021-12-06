@@ -23,6 +23,19 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 ## Time Box
 
+### Week 2
+
+Task | Evidence |
+| :---- | :---- | 
+
+|README quality, release day policies, Scrum Board to week after break|
+|Deployed Web Site|
+|About Pages on deployed on Site|
+|Page must Extend from Layout and have special customization (color pallet, background, etc)|
+|Picture with Mask that toggles to Picture of Choice (ie pic without mask)|
+|Pull or show data (Web API) with information of interest|
+|Establish link(s) to journal and other key indicators of your work and progress (remember pop quiz). TPT Link to Create Task planning|
+
 ### Week 1
 
 Task | Evidence |
