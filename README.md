@@ -29,11 +29,8 @@ Task | Evidence |
 | :---- | :---- | 
 | README quality, release day policies, Scrum Board to week after break | 
 | Deployed Web Site |
-| About Pages on deployed on Site |
-| Page must Extend from Layout and have special customization (color pallet, background, etc) |
-| Picture with Mask that toggles to Picture of Choice (ie pic without mask) |
-| Pull or show data (Web API) with information of interest |
-| Establish link(s) to journal and other key indicators of your work and progress (remember pop quiz). TPT Link to Create Task planning |
+| About Pages on deployed on Site (Page must Extend from Layout and have special customization, Picture with Mask that toggles to Picture of Choice, Pull or show data, WebAPI, Links to journals and key indicators of work |
+| 2.3, 2.4 Notes and Quizzes, Work on Create Task |
 
 ### Week 1
 
