@@ -27,8 +27,7 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 Task | Evidence |
 | :---- | :---- | 
-
-| README quality, release day policies, Scrum Board to week after break |
+| README quality, release day policies, Scrum Board to week after break | a |
 | Deployed Web Site |
 | About Pages on deployed on Site |
 | Page must Extend from Layout and have special customization (color pallet, background, etc) |
