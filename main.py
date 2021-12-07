@@ -1,5 +1,5 @@
 # import "packages" from flask
-#import requests
+import requests
 from flask import Flask, render_template, request
 from redditapi import getRedditData
 from flask import Flask, render_template
