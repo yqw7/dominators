@@ -32,10 +32,7 @@ Task | Evidence |
 | Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). |
 | Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. |
 | GitHub admin highlighting commits and pull requests completed by each individual. |
-| College Board Quiz and Journal
--3.11 Binary Search
--3.12 Calling Procedures
--3.13 Developing Procedures |
+| College Board Quiz and Journal (3.11 Binary Search, 3.12 Calling Procedures, 3.13 Developing Procedures) |
 ### Week 2
 
 Task | Evidence |
