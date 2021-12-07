@@ -23,12 +23,21 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 ## Time Box
 
+### Week 2
+
+Task | Evidence |
+| :---- | :---- | 
+| README quality, release day policies, Scrum Board to week after break | 
+| Deployed Web Site |
+| About Pages on deployed on Site (Page must Extend from Layout and have special customization, Picture with Mask that toggles to Picture of Choice, Pull or show data, WebAPI, Links to journals and key indicators of work |
+| 2.3, 2.4 Notes and Quizzes, Work on Create Task |
+
 ### Week 1
 
 Task | Evidence |
 | :---- | :---- | 
-| Design - Wiki Theme, Brain Write & Wire Frame | Completed by Casilla [WireFrames](https://docs.google.com/document/d/1o7De0RaBmzGRu645UDJPF3GE6uby7-S05AFiv4iS_pc/edit#)
-| Technicals - 10  to 12 key ideas |Login page using firebase, Rating system using database (SQL), comment section using database, api for ap class information and statistics, search (filters), upload system, filtering/detection system (inappropriate comments), favoriting / saving system, pathway system (prerequisites/class to take)|
+| Design - Wiki Theme, Brain Write & Wire Frame | Completed by Calissa [WireFrames + BrainWrite](https://docs.google.com/document/d/1o7De0RaBmzGRu645UDJPF3GE6uby7-S05AFiv4iS_pc/edit#)
+| Technicals - 10  to 12 key ideas |Login page using firebase, Rating system using database (SQL), comment section using database, api for ap class information and statistics, search (filters), upload system, filtering/detection system (inappropriate comments), favoriting / saving system, pathway system (prerequisites/class to take) [Link to Brainstorm Doc](https://docs.google.com/document/d/1o7De0RaBmzGRu645UDJPF3GE6uby7-S05AFiv4iS_pc/edit#heading=h.ixw3d210c27r)|
 | Github - On Wiki containing Management Plan | Completed by Isabella [contributing.md](https://github.com/yqw7/dominators/blob/main/CONTRIBUTING.md) |
 | Deployment - Wiki Plan, Hardware and Frequency | Completed by Hassan [Wiki](https://github.com/yqw7/dominators/wiki/Deployment) |
 | Scrum Board - Assignments and Backlog | Completed by Nicolas [Scrum Board](https://github.com/yqw7/dominators/projects/1) |
@@ -37,7 +46,7 @@ Task | Evidence |
 
 Task | Evidence |
 | :---- | :---- | 
-| Scrum Boards and Issue for each individual (.5 to seed) |
-| GitHub plan and commits by each individual (.5 to seed) |
+| Scrum Boards and Issue for each individual (.5 to seed) | [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|
+| GitHub plan and commits by each individual (.5 to seed) | [Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|
 
 
