@@ -17,6 +17,16 @@
             font-family: 'Barlow';
             color: black;
         }
+        h2{
+            margin: 10px 10px 10px 10px;
+            font-family: 'Barlow';
+            color: black;
+        }
+
+
+        table, th, td {
+            border: 1px solid black;
+        }
 
         body {
             color: white;
@@ -24,11 +34,13 @@
             background-size: cover;
         }
 
+        table{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
 
     </style>
-
-    </div>
-
     <h1>Calissa Tyrrell</h1>
 
     <p> Hi! My name is Calissa and I am currently a junior at Del Norte. My favorite class at Del Norte is AP Computer
@@ -37,19 +49,52 @@
     <p>I also have a lot of hobbies. I play basketball year-round, enjoy gardening, playing video games, as well as eating. Yes, eating is a hobby.
         I'd say there is a special art to good food. Yummy food (especially Italian food) is probably what I am most passionate about in regards to hobbies.</p>
 
-    {{ text }}
+    <h2>Burgers!</h2>
+    <table>
+        <tr>
+
+            <th><p>{{ text[1].name }} : {{ text[1].ingredients|join(", ") }} </p></th>
+            <th><p>{{ text[2].name }} : {{ text[2].ingredients|join(", ") }}</p></th>
+        </tr>
+        <tr>
+            <th><p>{{ text[3].name }} : {{ text[3].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[4].name }} : {{ text[4].ingredients|join(", ") }}</p> </th>
+        </tr>
+        <tr>
+            <th><p>{{ text[5].name }} : {{ text[5].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[6].name }} : {{ text[6].ingredients|join(", ") }}</p> </th>
+        </tr>
+        <tr>
+            <th><p>{{ text[7].name }} : {{ text[7].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[8].name }} : {{ text[8].ingredients|join(", ") }}</p> </th>
+        </tr>
+        <tr>
+            <th><p>{{ text[9].name }} : {{ text[9].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[10].name }} : {{ text[10].ingredients|join(", ") }}</p> </th>
+        </tr>
+        <tr>
+            <th><p>{{ text[11].name }} : {{ text[11].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[12].name }} : {{ text[12].ingredients|join(", ") }}</p> </th>
+        </tr>
+        <tr>
+            <th><p>{{ text[13].name }} : {{ text[13].ingredients|join(", ") }}</p> </th>
+            <th><p>{{ text[14].name }} : {{ text[14].ingredients|join(", ") }}</p> </th>
+        </tr>
+    </table>
+
 
     <button onclick="Toggle()">Toggle!</button>
     <img id = 'img1' src = 'https://github.com/yqw7/dominators/blob/main/static/calissa.png?raw=true'/>
 
     <table style = "width:400px" >
-        <tr>
-            <th>Tri 1</th>
-            <th>Tri 2</th>
+        <tr>`
+            <td><a href="https://docs.google.com/document/d/1OOVfFVMa9uzUVX7ZE6eb6zbkqH2unkIZnsF4JkRyONI/edit?usp=sharing">Pair Share Journal</a></td>
+            <td><a href="https://docs.google.com/document/d/1gclRMl3dyozW5rGUdBioHrKjowoUpM5miDs5HLVsUyY/edit?usp=sharing">1.1-1.2</a></td>
+            <td><a href="https://docs.google.com/document/d/1eqMReGGDTQ665V4eXvP4Rudj5uPXofFvgjoP5YYmBOs/edit?usp=sharing">1.3-1.4</a></td>
+            <td><a href="https://docs.google.com/document/d/1yM5nknl82erUoVY3YlVRge3H3svkgVnOk2Eq9r5sFy0/edit?usp=sharing">2.3-2.4</a></td>
         </tr>
         <tr>
-            <td><a href="https://docs.google.com/document/d/1M_jU_NzcbDCb40K4yJio2Le8LXt5a7TuSz09csn4ihg/edit?usp=sharing">Pair Share Journal</a></td>
-            <td><a href="https://docs.google.com/document/d/1OOVfFVMa9uzUVX7ZE6eb6zbkqH2unkIZnsF4JkRyONI/edit?usp=sharing">Pair Share Journal</a></td>
+            <td><a href="https://github.com/yqw7/dominators/issues/24">Create Task Planning</a></td>
         </tr>
     </table>
 

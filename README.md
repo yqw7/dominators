@@ -23,6 +23,25 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 ## Time Box
 
+### Week 3
+
+Task | Evidence |
+| :---- | :---- | 
+| Design Manager showing Bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | 
+| Scrum Master overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki.  Show expected backlog when returning from Winter Break. |
+| Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). |
+| Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. |
+| GitHub admin highlighting commits and pull requests completed by each individual. |
+| College Board Quiz and Journal (3.11 Binary Search, 3.12 Calling Procedures, 3.13 Developing Procedures) |
+### Week 2
+
+Task | Evidence |
+| :---- | :---- | 
+| README quality, release day policies, Scrum Board to week after break | 
+| Deployed Web Site |
+| About Pages on deployed on Site (Page must Extend from Layout and have special customization, Picture with Mask that toggles to Picture of Choice, Pull or show data, WebAPI, Links to journals and key indicators of work |
+| 2.3, 2.4 Notes and Quizzes, Work on Create Task |
+
 ### Week 1
 
 Task | Evidence |
@@ -37,7 +56,7 @@ Task | Evidence |
 
 Task | Evidence |
 | :---- | :---- | 
-| Scrum Boards and Issue for each individual (.5 to seed) |
-| GitHub plan and commits by each individual (.5 to seed) |
+| Scrum Boards and Issue for each individual (.5 to seed) | [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|
+| GitHub plan and commits by each individual (.5 to seed) | [Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|
 
 
