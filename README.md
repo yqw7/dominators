@@ -46,7 +46,7 @@ Task | Evidence |
 
 Task | Evidence |
 | :---- | :---- | 
-| Scrum Boards and Issue for each individual (.5 to seed) |
-| GitHub plan and commits by each individual (.5 to seed) |
+| Scrum Boards and Issue for each individual (.5 to seed) | [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|
+| GitHub plan and commits by each individual (.5 to seed) | [Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|
 
 
