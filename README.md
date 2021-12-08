@@ -23,6 +23,9 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 ## Time Box
 
+## Plan for work until week after Winter Break
+
+Add webpages to website with key technicals implemented, prepare for presentations on week 3 with BOF completed
 ### Week 3
 
 Task | Evidence |
