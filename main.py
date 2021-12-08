@@ -48,7 +48,18 @@ def walruses():
 
 @app.route('/abouthassan/')
 def abouthassan():
-    return render_template("abouthassan.html")
+    url = "https://community-open-weather-map.p.rapidapi.com/weather"
+
+    querystring = {"q":"London,uk","lat":"0","lon":"0","callback":"test","id":"2172797","lang":"null","units":"imperial","mode":"xml"}
+
+    headers = {
+        'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
+        'x-rapidapi-key': "d13a89c0d8msh97a5f0a94e24845p145b38jsnee3109acb495"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    text = response.json()
+    return render_template("abouthassan.html", text=text)
 
 @app.route('/isabella/')
 def isabella():
