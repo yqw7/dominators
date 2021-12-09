@@ -21,16 +21,13 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    {% block colors %}
-        <link rel="stylesheet" type="text/css" href={{  url_for("static", filename="scss/custom.css", version='204') }}>
-    {% endblock %}
 
     <!-- Use this block for page specific meta data -->
     {% block meta %}
         <title>Delp</title>
     {% endblock %}
 
-    <!--
+
     <style>
         body{
             background-image: url("https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true");
@@ -44,7 +41,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 
     </style>
 
- -->
+
 </head>
 
 <body>
