@@ -40,7 +40,7 @@ Task | Evidence |
 
 Task | Evidence |
 | :---- | :---- | 
-| README quality, release day policies, Scrum Board to week after break | 
+| README quality, release day policies, Scrum Board to week after break | [README](https://github.com/yqw7/dominators) [Scrum Board](https://github.com/yqw7/dominators/projects/1) [Release Day Policy (wiki)](https://github.com/yqw7/dominators/wiki/Work-Schedule---Policy)
 | Deployed Web Site |
 | About Pages on deployed on Site (Page must Extend from Layout and have special customization, Picture with Mask that toggles to Picture of Choice, Pull or show data, WebAPI, Links to journals and key indicators of work |
 | 2.3, 2.4 Notes and Quizzes, Work on Create Task |
