@@ -7,41 +7,95 @@
 <!- This is a replacement block for Body in base.html -->
 {% block content %}
     <!- Try building a new body here ->
-<head><
-    <img id="img1" src="/static/hassanphotos/hassanmask.jpg"; onclick=imageToggle()>
+<head>
 
-    <script>
-        function imageToggle(){
-            if(document.getElementById('img1').src == "/static/hassanphotos/hassanmask")
-            {
-                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/hassanmask.jpg?raw=true";
-            } else{
-                document.getElementById('img1').src = "/static/hassanphotos/hassanmask";
-            }
-        }
-    </script>
-></head>
+</head>
+
     <body style="background-image:url('/static/hassanphotos/hassanBackdrop.gif');background-position: center; background-repeat: no-repeat; background-size: cover;">
+
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
 
 
 
-        <img src="https://c.tenor.com/4otr5S3l1agAAAAj/dancing-duckdancing.gif" alt="">
-        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,.2);">
+        <!-- <img src="https://c.tenor.com/4otr5S3l1agAAAAj/dancing-duckdancing.gif" alt=""> -->
+        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,1);">
             <h2 style="font-size: 60px">Hello, my name is Hassan!</h2>
         </div>
-        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,.2);font-size: 25px;">
+        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,1);font-size: 25px;">
             <p>I am a nerd who likes videogames and wastes his entire life on youtube. During quarantine I would spend whole days grinding on minecraft servers. im good at computers but bad at coding them. I love the indoors.</p>
+            <td>
+                <a href="https://docs.google.com/document/d/1OOVfFVMa9uzUVX7ZE6eb6zbkqH2unkIZnsF4JkRyONI/edit?usp=sharing">Pair Share Journal</a>
+            </td>
         </div>
         <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/youtube_logo_icon_168737.png" width="10%">
         <img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" width="15%">
-        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,.2); width: 30%;">
+        <div class="col-12" style="font-family:Calibri,serif; color: white; background-color: rgba(22, 14, 74,1); width: 30%;">
+            <div class="container">
+
+                <div class="center-block">
+                    <div class="col-12" style="text-align: center; background-color: rgba(22, 14, 74,1); color: white;">
+                        <h1>Geolocation API</h1>
+                        <button id = "find-me">Find Location!</button><br/>
+                        <p id = "status"></p>
+                        <a id = "map-link" target="_blank"></a>
+                    </div>
+                </div>
             <h2>Current Favourite song:</h2>
         </div>
-        <iframe src="https://open.spotify.com/embed/track/2hpQl8ryv3IonCg9LiAtGT" width="516" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        <button onclick=""></button>
+            <iframe src="https://open.spotify.com/embed/track/6SpLc7EXZIPpy0sVko0aoU?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+        <button onclick="imgtoggle()">Change</button>
+        <img id = 'img1' src = 'https://github.com/yqw7/dominators/blob/main/static/hassanphotos/hassanmask.jpg?raw=true'
+             width="300"
+             height="500"/>
+
 
     </div>
+
+    <script>
+        function imgtoggle(){
+            const current = document.getElementById('img1').src;
+            if (current === "https://github.com/yqw7/dominators/blob/main/static/hassanphotos/hassanmask.jpg?raw=true")
+            {
+                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/hassanphotos/hassannomask.jpg?raw=true"
+            }
+            else{
+                document.getElementById('img1').src = "https://github.com/yqw7/dominators/blob/main/static/hassanphotos/hassanmask.jpg?raw=true"
+            }
+        }
+
+        function geoLocation() {
+
+            const status = document.querySelector('#status');
+            const mapLink = document.querySelector('#map-link');
+
+            mapLink.href = '';
+            mapLink.textContent = '';
+
+            function success(position) {
+                const latitude  = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                status.textContent = '';
+                mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+                mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+            }
+
+            function error() {
+                status.textContent = 'Unable to retrieve your location';
+            }
+
+            if(!navigator.geolocation) {
+                status.textContent = 'Geolocation is not supported by your browser';
+            } else {
+                status.textContent = 'Locating…';
+                navigator.geolocation.getCurrentPosition(success, error);
+            }
+
+        }
+
+        document.querySelector('#find-me').addEventListener('click', geoLocation);
+    </script>
 
 
 {% endblock %}
