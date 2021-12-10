@@ -7,10 +7,10 @@
 </head>
 <!- This is a replacement block for Body in base.html -->
 {% block content %}
-<h1 style="color:cornflowerblue;">Meet Nicolas!</h1>
-<body style="background-color:skyblue;">
-<img src="https://media0.giphy.com/media/mP8YqtjCNOB9HLyrn0/200w.gif?cid=82a1493b7t5i4khdgl6mj5s0b78y0l74djn62olfo42f7dh5&rid=200w.gif&ct=g" alt="">
-<p style="color:white"> Hi, my name is Nicolas. I am currently a sophmore at Del Norte Highschool. I play soccer for the JV team and enjoy hanging out with friends and playing games in my free time. I have a twin sister too and like to travel.</p>
+    <h1 style="color:cornflowerblue;">Meet Nicolas!</h1>
+    <body style="background-color:skyblue;">
+    <img src="https://media0.giphy.com/media/mP8YqtjCNOB9HLyrn0/200w.gif?cid=82a1493b7t5i4khdgl6mj5s0b78y0l74djn62olfo42f7dh5&rid=200w.gif&ct=g" alt="">
+    <p style="color:white"> Hi, my name is Nicolas. I am currently a sophmore at Del Norte Highschool. I play soccer for the JV team and enjoy hanging out with friends and playing games in my free time. I have a twin sister too and like to travel.</p>
     <div>
         <h2 style="color:white">Picture:</h2>
         <img src=/static/nicolasphotos/nicolas_pic.jpg id="getImage">
@@ -29,15 +29,28 @@
             }
         }
     </script>
-<a href="https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit"> My Journal </a>
-<a class="nav-link" href="/game">API</a>
-</body>
+    <div class="container-fluid bg-3 text-center" style="background-color: lightgray">
+        <h3 class="margin">Resources</h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://docs.google.com/document/d/1cUC118ElQNjxUQJUZK0I8cet_aIrYRc2IVTN099TU9I/edit"> My Journal </a>
+                <img src="https://lh3.googleusercontent.com/proxy/FYb90ijqRVAmbqMluWQcv5MSLgECC9RS6Loghuw5AhZ-Ptgph9ZnQqmLJ6awdrMO-O9cZAKywU8b3wi3nJbF1aas" class="img-responsive margin" style="width:85%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <a class="nav-link" href="/game">API</a>
+                <img src="https://mysiteauditor.com/themes/seogroup/img/api.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://github.com/yqw7/dominators">My GitHub Repository</a>
+                <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+    </body>
 {% endblock %}
-
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
 
 </html>
-
 
