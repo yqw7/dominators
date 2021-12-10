@@ -15,11 +15,18 @@
             <p>I also have two cats!</p>
             <p>I am on our school's track and field team and marching band</p>
             <p>I like to spend my free time playing video games like Valorant, Osu, and League of Legends</p>
+            <p id="jokework"></p>
         </div>
     </div>
 
     <script>
-        $document.ready{function (
+        $(document).ready(function() {
+            var baseURL = "https://v2.jokeapi.dev/";
+            var categories = ["Pun", "Christmas"];
+            var params = [
+                "blacklistFlags=nsfw,religious,racist",
+                "idRange=0-100"
+            ];
         var xhr = new XMLHttpRequest();
         xhr.open("GET", baseURL + "/joke/" + categories.join(",") + "?" + params.join("&"));
 
@@ -44,6 +51,7 @@
         xhr.send();
         })
     </script>
+
     <div>
         <img src=/static/isabellaphotos/isabella_no_mask3.jpg id="imageI">
     </div>
@@ -61,7 +69,7 @@
             }
         }
     </script>
-    <p id="jokework"></p>
+
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
