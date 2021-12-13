@@ -35,8 +35,8 @@ Task | Evidence |
 | Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). |
 | Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. |
 | GitHub admin highlighting commits and pull requests completed by each individual. |![image](https://user-images.githubusercontent.com/89166884/145882689-91278e0c-487a-4edd-8014-3d058a839d05.png)
-
-| College Board Quiz and Journal (3.11 Binary Search, 3.12 Calling Procedures, 3.13 Developing Procedures) |
+| AP MCQ Test and Corrections |
+| 1 minute video by Technical Officer and Scrum Master on Asynchronous Data Access according to Create Task Guidelines |
 ### Week 2
 
 Task | Evidence |
