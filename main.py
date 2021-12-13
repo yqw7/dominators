@@ -3,6 +3,7 @@ import requests
 from flask import Flask, render_template, request
 from redditapi import getRedditData
 from flask import Flask, render_template
+#from __init__ import app
 #from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 
