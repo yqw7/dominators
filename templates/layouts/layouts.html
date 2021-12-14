@@ -8,6 +8,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 <html lang="en">
 
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,14 +30,11 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     {% endblock %}
 
 
-    <style>
-        body{
-            background-image: url("https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true");
-            background-size: cover;
-        }
-
-        h1{
-            font-size: 5em;
+    <style style="background-color:whitesmoke;">
+        p {
+            margin: 10px 10px 10px 10px;
+            font-family: 'Abel';
+            color: black;
         }
 
 
@@ -48,7 +47,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 {% include "layouts/navbar.html" %}
 
 {% block content %}
-
+<p> test </p>
 {% endblock %}
 
 <!-- Bootstrap 5.0 Bundle with Popper -->
