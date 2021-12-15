@@ -33,7 +33,7 @@ Task | Evidence |
 | Design Manager showing Bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | 
 | Scrum Master overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki.  Show expected backlog when returning from Winter Break. | Completed by Nicolas: [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1), [Dominators Wiki](https://github.com/yqw7/dominators/wiki), [README](https://github.com/yqw7/dominators#readme)
 | Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). | 
-| Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | Completed by Hassan: |
+| Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | Completed by Hassan: (www.delp.rocks) |
 | GitHub admin highlighting commits and pull requests completed by each individual. |![image](https://user-images.githubusercontent.com/89166884/145882689-91278e0c-487a-4edd-8014-3d058a839d05.png)
 | AP MCQ Test and Corrections |
 | 1 minute video by Technical Officer and Scrum Master on Asynchronous Data Access according to Create Task Guidelines |
