@@ -1,15 +1,20 @@
 # import "packages" from flask
 import requests
-from flask import Flask, render_template, request
+from __init__ import app
 from redditapi import getRedditData
-from flask import Flask, render_template
-#from __init__ import app
+
+from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response, Flask
+from flask_restful import Api, Resource
+from crud.model import Users
+from __init__ import app
+
+
+
+
 #from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
-
+from crud.app_crud import app_crud
 # create a Flask instance
-app = Flask(__name__)
-
 
 # connects default URL to render index.html
 @app.route('/')
@@ -19,6 +24,8 @@ def index():
 @app.route('/Ethan/')
 def stub2():
     return render_template("Ethan.html")
+
+app.register_blueprint(app_crud)
 
 @app.route('/calissa/')
 def calissa():
@@ -84,6 +91,7 @@ def game():
     url = "http://localhost:5000/api/game"
     response = requests.request("GET", url)
     return render_template("nicolas/game.html", game=response.json())
+
 
 app.register_blueprint(api_bp)
 
