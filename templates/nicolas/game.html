@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends "layouts/base.html" %}
+{% extends "layouts/layouts.html" %}
 
 {% block content %}
     <body style="background-color:skyblue">
@@ -7,7 +7,7 @@
 
         <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
             <div class="col-12" style="text-align: center;">
-                <h1><strong>Random Game</strong></h1>
+                <h1><strong>My Favorite Games</strong></h1>
                 <form action={{url_for('game')}}>
                     <button>Refresh!</button>
                 </form>

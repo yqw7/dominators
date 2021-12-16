@@ -2,10 +2,15 @@
 import requests
 from __init__ import app
 from redditapi import getRedditData
+
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response, Flask
 from flask_restful import Api, Resource
 from crud.model import Users
 from __init__ import app
+
+
+
+
 #from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
@@ -18,22 +23,7 @@ def index():
 
 @app.route('/Ethan/')
 def stub2():
-    url = "https://api.kuroganehammer.com/api/characters"
-    api = "https://api.kuroganehammer.com/api/characters/27/throws"
-
-    response2 = requests.request("GET", api)
-    new_text = response2.json() 
-    
-    response = requests.request("GET", url)
-    text = response.json()
-    return render_template("/ethan/Ethan.html", text=text, new_text=new_text)
-
-@app.route('/smashapi/')
-def smashapi():
-    url = "https://api.kuroganehammer.com/api/characters"
-    response = requests.request("GET", url)
-    text = response.json()
-    return render_template("/ethan/smashapi.html",text=text)
+    return render_template("Ethan.html")
 
 app.register_blueprint(app_crud)
 
@@ -101,6 +91,9 @@ def game():
     url = "http://localhost:5000/api/game"
     response = requests.request("GET", url)
     return render_template("nicolas/game.html", game=response.json())
+
+
+app.register_blueprint(api_bp)
 
 # runs the application on the development server
 if __name__ == "__main__":
