@@ -1,6 +1,7 @@
 {% extends "layouts/layouts.html" %}
 
 {% block content %}
+    <div class="container py-5 primary">
     <head>
         <style>
             * {box-sizing: border-box;}
@@ -45,16 +46,26 @@
         </style>
     </head>
 
-    <body><div class="slideshow-container">
+
+    <body>
+
+    <div class="box py-lg-0 bg-light" style="box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2); padding:2px 16px">
+        <h1 class="fw-bold lh-sm">Example Class 1</h1>
+        <h2 class="fw-bold lh-sm">Rating</h2>
+        <p class="fw-bold lh-1"> Subject</p>
+        <p class="fw-bold lh-sm">Tutorial</p>
+    </div>
+
+        <div class="slideshow-container">
 
         <div class="mySlides">
             <div class="numbertext">1 / 3</div>
-            <img src="https://github.com/yqw7/dominators/blob/main/static/Cyclops.PNG?raw=true" style="width:100%">
+            <img src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true" style="width:100%;">
         </div>
 
         <div class="mySlides">
             <div class="numbertext">2 / 3</div>
-            <img src="https://github.com/yqw7/dominators/blob/main/static/cdog.png?raw=true" style="width:100%">
+            <img src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true" style="width:100%">
         </div>
 
         <div class="mySlides">
@@ -69,6 +80,12 @@
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+    </div>
+
+    <div class="box py-lg-3 bg-light" style="box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2); padding:2px 16px">
+        <h2 class="fw-bold">Description</h2>
+        <p class="fw-bold">Teachers</p>
+        <p class="fw-bold">Reviews</p>
     </div>
 
     <script>
@@ -89,8 +106,10 @@
             }
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
     </script>
+
     </body>
+    </div>
 {% endblock %}

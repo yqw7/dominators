@@ -1,14 +1,22 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/layouts.html" %}
 
-<!-- Setting up variables to customize "project" details to be specific to kangaroos -->
-{% set project = "Kangaroos" %}
-{% set overview = "https://www.youtube.com/watch?v=qXU-4Dwkv2E" %}
-{% set scrumboard = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber" %}
-{% set repo = "https://github.com/avabrooks/Python-Web-Portfolio-Series-Demo" %}
-{% set authors = "https://thesmack.nighthawkcodingsociety.com/digitalPortfolios/"  %}
+{% block content %}
+    <div class="container py-5 primary">
+    <head>
 
-<!-- Setting up a block replacement to customize background to RINGS -->
-{% block background %}
+    </head>
+    <body>
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%">
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"  style="width: 50%">
+        <div class="box" style="padding: 2px 16px;">
+            <h4 class="fw-bold">Your Account</h4>
+            <p>Grade</p>
+            <p>Bio</p>
+        </div>
+    </div>
+    </body>
+
+    </div>
 
 {% endblock %}
