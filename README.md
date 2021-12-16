@@ -37,6 +37,12 @@ Task | Evidence |
 | GitHub admin highlighting commits and pull requests completed by each individual. |![image](https://user-images.githubusercontent.com/89166884/145882689-91278e0c-487a-4edd-8014-3d058a839d05.png)
 | AP MCQ Test and Corrections | Completed by Everyone: [MCQ Test and Corrections Evidnce](https://github.com/yqw7/dominators/issues/44)
 | 1 minute video by Technical Officer and Scrum Master on Asynchronous Data Access, current PBL highlights, and plans when returning from Winter Break. | Completed by Ethan and Nicolas: [Video](https://drive.google.com/file/d/1L3d6ztSZQayMkXctqjXDZKBJNJ4h2Oyw/view?usp=sharing)
+
+PBL Highlights: Pages: [Profile](https://www.delp.rocks/kangaroos/), [Search Page](https://www.delp.rocks/walruses/), [Class List](https://www.delp.rocks/hawkers/)
+                Databse: [Database](https://www.delp.rocks/crud/) 
+                [Scrum Board showing PBL work](https://github.com/yqw7/dominators/projects/1)
+                (in video)
+
 ### Week 2
 
 Task | Evidence |
