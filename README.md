@@ -6,7 +6,7 @@
 
 ## Dominators Project Credits
 
-|[Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|[Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|[Runtime Link](www.delp.rocks)
+|[Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1)|[Insight Graphs](https://github.com/yqw7/dominators/graphs/contributors)|[Runtime Link](www.delp.rocks)|
 | :---   | :--- |
 
 Name | Github Profile | Journal Links | Role | Commits |
