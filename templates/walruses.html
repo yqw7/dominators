@@ -1,14 +1,27 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/layouts.html" %}
 
-<!-- Setting up variables to customize "project" details to be specific to walruses -->
-{% set project = "Walruses" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/dash" %}
-{% set scrumboard = "https://github.com/ridhimainukurti/group-2/projects/1" %}
-{% set repo = "https://github.com/ridhimainukurti/group-2" %}
-{% set authors = "https://wasc.nighthawkcodingsociety.com/about"  %}
+{% block content %}
+<div class="container py-5 primary">
+<head>
+<style>
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+</style>
+</head>
 
-<!-- Setting up a block replacement to customize background to RINGS -->
-{% block background %}
+<body>
+<img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
 
+<div class="container py-2 bg-light" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%">
+    <div class="box" style="padding: 2px 16px;">
+        <h4 class="fw-bold">Search...</h4>
+    </div>
+
+</body>
+</div>
 {% endblock %}
