@@ -7,13 +7,11 @@ from flask import Blueprint, render_template, request, url_for, redirect, jsonif
 from flask_restful import Api, Resource
 from crud.model import Users
 from __init__ import app
-
-
-
-
-#from wikipedia import requests
+from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
+
+
 # create a Flask instance
 
 # connects default URL to render index.html
@@ -81,6 +79,14 @@ def nicolas():
 def hawkers():
     return render_template("hawkers.html")
 
+@app.route('/login/', methods=["GET", "POST"])
+def login():
+    return render_template("login.html")
+
+
+@app.route('/signup/')
+def signup():
+    return render_template("signup.html")
 
 @app.route('/stub/')
 def stub():
