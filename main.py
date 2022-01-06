@@ -7,7 +7,7 @@ from flask import Blueprint, render_template, request, url_for, redirect, jsonif
 from flask_restful import Api, Resource
 from crud.model import Users
 from __init__ import app
-from wikipedia import requests
+#from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
 from aboutus import aboutus
@@ -26,6 +26,10 @@ app.register_blueprint(aboutus)
 @app.route('/postoftheday/')
 def postoftheday():
     return render_template("postoftheday.html", rdata=getRedditData())
+
+@app.route('/sandbox/')
+def sandbox():
+    return render_template("ethan/sandbox.html")
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
