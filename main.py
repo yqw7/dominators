@@ -10,7 +10,7 @@ from __init__ import app
 from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
-
+from aboutus import aboutus
 
 # create a Flask instance
 
@@ -19,24 +19,9 @@ from crud.app_crud import app_crud
 def index():
     return render_template("index.html")
 
-@app.route('/Ethan/')
-def stub2():
-    return render_template("Ethan.html")
 
 app.register_blueprint(app_crud)
-
-@app.route('/calissa/')
-def calissa():
-    url = "https://burgers1.p.rapidapi.com/burgers"
-
-    headers = {
-        'x-rapidapi-host': "burgers1.p.rapidapi.com",
-        'x-rapidapi-key': "d7c8c8031emshc7982f51947d6d4p19192fjsnc28f123f5152"
-    }
-
-    response = requests.request("GET", url, headers=headers)
-    text = response.json()
-    return render_template("calissa.html", text=text)
+app.register_blueprint(aboutus)
 
 @app.route('/postoftheday/')
 def postoftheday():
@@ -52,28 +37,6 @@ def kangaroos():
 def walruses():
     return render_template("walruses.html")
 
-@app.route('/abouthassan/')
-def abouthassan():
-    url = "https://community-open-weather-map.p.rapidapi.com/weather"
-
-    querystring = {"q":"London,uk","lat":"0","lon":"0","callback":"test","id":"2172797","lang":"null","units":"imperial","mode":"xml"}
-
-    headers = {
-        'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
-        'x-rapidapi-key': "d13a89c0d8msh97a5f0a94e24845p145b38jsnee3109acb495"
-    }
-
-    response = requests.request("GET", url, headers=headers)
-    text = response.json()
-    return render_template("abouthassan.html", text=text)
-
-@app.route('/isabella/')
-def isabella():
-    return render_template("isabella.html")
-
-@app.route('/nicolas/')
-def nicolas():
-    return render_template("nicolas/nicolas.html")
 
 @app.route('/hawkers/')
 def hawkers():
