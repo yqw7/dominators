@@ -2,37 +2,6 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/layouts.html" %}
 
-{% block content %}
-    <div class="container py-5 primary">
-
-        <style>
-
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-        </style>
-
-        <img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
-
-        <div class="container bg-light" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%; opacity:0.8">
-            <div class="box"; style="padding: 2px 16px;">
-                <input type="text" class="form-control" id="term" placeholder="enter search term">
-                <label></label> <!-- spacer -->
-                <button class=fw-bold" style="opacity:1.0" onclick="search();">Search</button>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row" id="result"></div>
-        </div>
-
-    </div>
-    <!-- Extending the project layout, as this file will do minor customizations -->
-    {% extends "layouts/layouts.html" %}
-
     {% block content %}
         <div class="container py-5 primary">
 
