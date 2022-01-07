@@ -7,7 +7,6 @@ from flask import Blueprint, render_template, request, url_for, redirect, jsonif
 from flask_restful import Api, Resource
 from crud.model import Users
 from __init__ import app
-from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
 from aboutus import aboutus
