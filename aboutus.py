@@ -1,17 +1,9 @@
 # import "packages" from flask
 import requests
+from flask import Blueprint, render_template
 from __init__ import app
-from redditapi import getRedditData
-
-from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response, Flask
-from flask_restful import Api, Resource
-from crud.model import Users
-from __init__ import app
-
 
 #from wikipedia import requests
-from templates.nicolas.gameapi import api_bp
-from crud.app_crud import app_crud
 # create a Flask instance
 aboutus = Blueprint('aboutus', __name__)
 
@@ -53,5 +45,13 @@ def isabella():
 
 @app.route('/nicolas/')
 def nicolas():
-    return render_template("nicolas/nicolas.html")
+    url = "https://free-epic-games.p.rapidapi.com/free"
 
+    headers = {
+    'x-rapidapi-host': "free-epic-games.p.rapidapi.com",
+    'x-rapidapi-key': "7d45651254msh14a87f4a7f9175ep109af9jsn98eb11ed4c66"
+}
+
+    response = requests.request("GET", url, headers=headers)
+    output = response.json()
+    return render_template("nicolas/nicolas.html", soccer=output)
