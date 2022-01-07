@@ -36,7 +36,7 @@ def sandbox():
 def kangaroos():
     return render_template("kangaroos.html")
 
-\
+
 @app.route('/walruses', methods=['GET', 'POST'])
 def walruses():
     defaultURL = "walruses.html"
@@ -54,7 +54,7 @@ def walruses():
     return render_template(defaultURL)
 
 
-
+ 
 @app.route('/hawkers/')
 def hawkers():
     return render_template("hawkers.html")
