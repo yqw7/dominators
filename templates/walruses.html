@@ -1,36 +1,131 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
+<!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/layouts.html" %}
 
-{% block content %}
-<div class="container py-5 primary">
-<head>
-<style>
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-</style>
-</head>
+    {% block content %}
+        <div class="container py-5 primary">
 
-<body>
-<img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
+            <style>
 
-<div class="container">
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <div class="col-12">
-            <form action="/walruses" id="hello" method="POST">
-                <label for="name">Search for somebody?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Search">
-            </form>
+                .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+            </style>
 
+            <img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
+
+            <div class="container bg-light" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%; opacity:0.8">
+                <div class="box"; style="padding: 2px 16px;">
+                    <input type="text" class="form-control" id="term" placeholder="enter search term">
+                    <label></label> <!-- spacer -->
+                    <button class=fw-bold" style="opacity:1.0" onclick="search();">Search</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="result"></div>
+            </div>
 
         </div>
-    </div>
-</div>
 
-</body>
-</div>
+        <script>
+            function search() {
+                // fetch standard requires data set to a name-value pair
+                const term = document.getElementById("term");
+                const body = {
+                    term: term.value
+                };
+
+                // fetch call with header options
+                fetch('/crud/search/term/', {
+                    method: "POST",
+                    credentials: "include",
+                    body: JSON.stringify(body),
+                    cache: "no-cache",
+                    headers: new Headers({
+                        "content-type": "application/json"
+                    })
+                })
+                    // async then replies with response header
+                    .then(function (response) {
+                        // prepare HTML search result container for new output
+                        const resultContainer = document.getElementById("result");
+                        // clean up from previous search
+                        while (resultContainer.firstChild) {
+                            resultContainer.removeChild(resultContainer.firstChild);
+                        }
+                        // trap error response from Web API
+                        if (response.status !== 200) {
+                            const errorMsg = 'Database response error: ' + response.status;
+                            console.log(errorMsg);
+                            const div = document.createElement("div");
+                            div.innerHTML = errorMsg;
+                            resultContainer.appendChild(div);
+                            return;
+                        }
+                        // response contains valid result
+                        response.json().then(function(data) {
+                            // loop through JSON and build HTML output
+                            for (let i = 0; i < data.length; i++) {
+                                const div = document.createElement("div");
+                                div.innerHTML = data[i].name + ' ' + data[i].email;
+                                resultContainer.appendChild(div);
+                            }
+                        })
+                    })
+            }
+
+        </script>
+    {% endblock %}
+    <script>
+        function search() {
+            // fetch standard requires data set to a name-value pair
+            const term = document.getElementById("term");
+            const body = {
+                term: term.value
+            };
+
+            // fetch call with header options
+            fetch('/crud/search/term/', {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(body),
+                cache: "no-cache",
+                headers: new Headers({
+                    "content-type": "application/json"
+                })
+            })
+                // async then replies with response header
+                .then(function (response) {
+                    // prepare HTML search result container for new output
+                    const resultContainer = document.getElementById("result");
+                    // clean up from previous search
+                    while (resultContainer.firstChild) {
+                        resultContainer.removeChild(resultContainer.firstChild);
+                    }
+                    // trap error response from Web API
+                    if (response.status !== 200) {
+                        const errorMsg = 'Database response error: ' + response.status;
+                        console.log(errorMsg);
+                        const div = document.createElement("div");
+                        div.innerHTML = errorMsg;
+                        resultContainer.appendChild(div);
+                        return;
+                    }
+                    // response contains valid result
+                    response.json().then(function(data) {
+                        // loop through JSON and build HTML output
+                        for (let i = 0; i < data.length; i++) {
+                            const div = document.createElement("div");
+                            div.innerHTML = data[i].name + ' ' + data[i].email;
+                            resultContainer.appendChild(div);
+                        }
+                    })
+                })
+        }
+
+    </script>
 {% endblock %}
