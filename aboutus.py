@@ -9,7 +9,21 @@ aboutus = Blueprint('aboutus', __name__)
 
 @app.route('/Ethan/')
 def stub2():
-    return render_template("Ethan.html")
+    url = "https://api.kuroganehammer.com/api/characters"
+
+
+    response = requests.request("GET", url)
+    text = response.json()
+    return render_template("/ethan/Ethan.html", text=text)
+
+@app.route('/smashapi/')
+def smashapi():
+    url = "https://api.kuroganehammer.com/api/characters"
+
+
+    response = requests.request("GET", url)
+    text = response.json()
+    return render_template("ethan/smashapi.html", text=text)
 
 @app.route('/calissa/')
 def calissa():
