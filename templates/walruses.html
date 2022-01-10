@@ -3,20 +3,33 @@
 {% extends "layouts/layouts.html" %}
 
 {% block content %}
+    <img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
+
         <div class="container py-5 primary">
 
             <style>
-
                 .center {
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
                     width: 100%;
+                    position: relative;
+                    background-size: cover;
                 }
+
+                .searchBar{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+
+
             </style>
 
-            <img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
-            <div class="container">
+
+            <!--<div class="container">
                 <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
                     <div class="col-12">
                         <form action="/walruses" id="hello" method="POST">
@@ -24,18 +37,20 @@
                             <input name="name" id="name">
                             <input type="submit" value="Search">
                         </form>
-
+        -->
 
                     </div>
                 </div>
             </div>
-            <div class="container bg-light" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%; opacity:0.8">
+
+            <div class="container bg-light searchBar" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%; opacity:0.8">
                 <div class="box"; style="padding: 2px 16px;">
                     <input type="text" class="form-control" id="term" placeholder="enter search term">
                     <label></label> <!-- spacer -->
                     <button class=fw-bold" style="opacity:1.0" onclick="search();">Search</button>
                 </div>
             </div>
+
 
             <div class="container">
                 <div class="row" id="result"></div>
