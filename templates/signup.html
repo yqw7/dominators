@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% extends "layouts/layouts.html" %}
+{% block content %}
+    <html lang="eng">
+    <style>
+        body {
+            background-image: url("/static/delnorte.jpeg");
+    }
+    </style>
+
+<div class="container">
+    <br>
+    <h4>Please Register:</h4>
+    <br>
+    <form id="register">
+        <br />
+        <input
+                style="text-align: center"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="form-control"
+        />
+        <br />
+        <input
+                style="text-align: center"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                class="form-control"
+        />
+        <br />
+        <input
+                style="text-align: center"
+                class="btn btn-primary loginbtn"
+                type="submit"
+                value="Register"
+        />
+    </form>
+    <input
+            style="text-align: center"
+            class="btn btn-primary loginbtn"
+            type="submit"
+            onclick="redirect()"
+            value="Have an account? Login!"
+    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <script>
+        const config = {
+            apiKey: "AIzaSyAD-hs5G5tHw9La0TZ5GzVyWhaReHeP2go",
+            authDomain: "delp-login.firebaseapp.com",
+            databaseURL: "https://delp-login-default-rtdb.firebaseio.com",
+            projectId: "delp-login",
+            storageBucket: "delp-login.appspot.com",
+            messagingSenderId: "28136625884",
+            appId: "1:28136625884:web:ca3b50e3250de3e5d98619",
+            measurementId: "G-EPJHM44FQP"
+        };
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        if (firebase.apps.length === 0) {
+            firebase.initializeApp(config);
+            console.log("worked");
+        }
+        const auth = firebase.auth();
+        var form = document.getElementById("register");
+        var submit = document.getElementById("submit");
+
+        form.onsubmit = function (e) {
+            e.preventDefault();
+            const email = form["email"].value;
+            const password = form["password"].value;
+            auth.createUserWithEmailAndPassword(email, password).then(function (){
+                console.log('signed up successfully')
+                window.location.pathname = '/login'
+            }).catch((err) => {
+                if (err.code === "auth/email-already-in-use") {
+                    window.location.pathname = "/error/"
+                } else if (err.code === "auth/invalid-email") {
+                    window.location.pathname = "/error/"
+                }
+            });
+        };
+        function redirect() {
+            window.location.pathname = "/login/"
+        }
+    </script>
+</div>
+{% endblock %}
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+</html>
