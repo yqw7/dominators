@@ -10,7 +10,9 @@ class Palindrome:
         # analysis values
         self._is_a_palindrome = False  # initialize status
         self._az09 = re.sub(r'[^a-zA-Z0-9]', '', self._candidate)  # alpha numeric characters
-        self._analysis = []  # array of tests
+        self._analysis = [
+
+        ]  # array of tests
         self._tests = 0  # counter of tests performed
         # evaluate for palindrome
         self.is_palindrome()

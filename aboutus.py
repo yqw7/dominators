@@ -23,7 +23,8 @@ def smashapi():
 
     response = requests.request("GET", url)
     text = response.json()
-    return render_template("ethan/smashapi.html", text=text)
+    
+    return render_template("ethan/smashapi.html", text=text,)
 
 @app.route('/calissa/')
 def calissa():
