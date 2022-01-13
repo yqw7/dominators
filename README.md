@@ -23,6 +23,16 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 
 ## Time Box
 
+### Week 3
+
+Task | Evidence |
+| :---- | :---- | 
+| Demo of PBL key features|
+| Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) |
+| Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features |
+| Async Operation - runtime and under the hood usage of JavaScript and Fetch |
+| CRUD in Database - runtime and behind the scenes using CRUD operations | 
+
 ## Plan for work until week after Winter Break
 
 Add webpages to website with key technicals implemented, prepare for presentations on week 3 with BOF completed
