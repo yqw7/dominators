@@ -27,9 +27,17 @@ app.register_blueprint(aboutus)
 def postoftheday():
     return render_template("postoftheday.html", rdata=getRedditData())
 
-@app.route('/sandbox/')
+@app.route('/sandbox/', methods=['GET', 'POST'])
 def sandbox():
-    return render_template("ethan/sandbox.html")
+    class_list = ["ap chem", "ap calc AB", "ap calc BC", "ap stats", "ap bio", "ap european history" ]
+    if request.form:
+            new_class = request.form.get("name")
+            if len(new_class) != 0:  # input field has content
+                class_list.append(new_class)
+                return render_template("ethan/sandbox.html",  name=class_list)
+        # starting and empty input default
+    return render_template("ethan/sandbox.html", class_list=class_list, name=" ")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
