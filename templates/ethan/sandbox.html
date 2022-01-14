@@ -1,22 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div class="container">
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <div class="col-12">
-            <form action="/articles/aaa" id="hello" method="POST">
-                <label for="name">Search for an article?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-            </form>
+{% set class_number = class_list|length %}
 
-            <p> The articles you are looking for are {{name}}</p>
+<body>
+    <div class="container">
+        <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+            <div class="col-12">
+                <form action="/sandbox/" id="hello2" method="POST">
+                    <label for="name">What class do you want to add?</label>
+                    <input name="name" id="name2">
+                    <input type="submit" value="Add">
+                </form>
+
+                <p> The new class list is {{name}}</p>
+            </div>
         </div>
     </div>
-</div>
+        <table style="border-collapse: 1px;">
+            <tr>
+                <th style="height:30px;width:400px;text-align:center;">
+                    Class List
+                </th>
+            </tr>
+            {% for i in range(class_number) %}
+            <tr>
+                <td style="text-align:center;">
+                    {{ class_list[i] }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="container">
+            <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+                <div class="col-12">
+                    <form action="/walruses" id="hello" method="POST">
+                        <label for="name">Search for somebody?</label>
+                        <input name="name" id="name">
+                        <input type="submit" value="Search">
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
 </body>
-</html>
