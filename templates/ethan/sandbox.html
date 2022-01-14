@@ -5,23 +5,23 @@
         <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
             <div class="col-12">
                 <form action="/sandbox/" id="hello2" method="POST">
-                    <label for="name">What class do you want to add?</label>
+                    <label for="name">What class do you want to search for?</label>
                     <input name="name" id="name2">
                     <input type="submit" value="Add">
                 </form>
 
-                <p> The new class list is {{name}}</p>
+                <p> The class you are looking for is {{name}}</p>
             </div>
         </div>
     </div>
-        <table style="border-collapse: 1px;">
-            <tr>
+        <table style="border-collapse: collapse; border: 1px solid black;">
+            <tr style="border-collapse: collapse; border: 1px solid black;">
                 <th style="height:30px;width:400px;text-align:center;">
                     Class List
                 </th>
             </tr>
             {% for i in range(class_number) %}
-            <tr>
+            <tr style="border-collapse: collapse; border: 1px solid black;">
                 <td style="text-align:center;">
                     {{ class_list[i] }}
                 </td>
