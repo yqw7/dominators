@@ -34,6 +34,16 @@ Task | Evidence |
 | CRUD in Database - runtime and behind the scenes using CRUD operations | ![image](https://user-images.githubusercontent.com/89167131/149402810-517fd0f2-cb89-4249-a5e4-3c4af5c8f453.png)|
 | Extra Credit work| ![image](https://user-images.githubusercontent.com/89167131/149403016-fc5e6a79-c27c-4985-a55c-ce0d48fbc420.png)|
 
+## Week 4
+
+Task | Evidence |
+| :---- | :---- | 
+| Individual Work | [Nicolas](https://github.com/yqw7/dominators/issues/53) |
+| Individual Work | [Calissa](https://github.com/yqw7/dominators/issues/54) |
+| Individual Work | [Ethan](https://github.com/yqw7/dominators/issues/56) |
+| Individual Work | Isabella |
+| Individual Work | [Hassan](https://github.com/yqw7/dominators/issues/61) |
+
 ## Plan for work until week after Winter Break
 
 Add webpages to website with key technicals implemented, prepare for presentations on week 3 with BOF completed
