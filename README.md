@@ -19,30 +19,42 @@ Name | Github Profile | Journal Links | Role | Commits |
 
 ## Policies 
 
-Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" collumns to track task progress.
+Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" columns to track task progress.
 
 ## Time Box
 
-### Week 3
+### Week 5
 
 Task | Evidence |
 | :---- | :---- | 
-| Demo of PBL key features|
-| Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) |
-| Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | ![image](https://user-images.githubusercontent.com/89167131/149403816-f1c7fa4b-07e6-4d4f-b692-f6baa24a5df8.png) ![image](https://user-images.githubusercontent.com/89167131/149403877-5bcf1234-30f3-451f-840e-df47fe4253e8.png)
+| Demo of PBL key features| [Login Page](https://github.com/yqw7/dominators/issues/19), [Class Rating/Overview](https://www.delp.rocks/hawkers/), [Profile](https://www.delp.rocks/kangaroos/), Class List
+| Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) | -PBL: [Project](delp.rocks) -Github Pages / Jekyll: [Pages](https://yqw7.github.io/dominators/)
+| Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | [CSS usage](https://github.com/yqw7/dominators/issues/63)
 | Async Operation - runtime and under the hood usage of JavaScript and Fetch | 
-| CRUD in Database - runtime and behind the scenes using CRUD operations | ![image](https://user-images.githubusercontent.com/89167131/149402810-517fd0f2-cb89-4249-a5e4-3c4af5c8f453.png)|
+| CRUD in Database - runtime and behind the scenes using CRUD operations | [CRUD Database Work](https://github.com/yqw7/dominators/issues/64)|
 | Extra Credit work| ![image](https://user-images.githubusercontent.com/89167131/149403016-fc5e6a79-c27c-4985-a55c-ce0d48fbc420.png)|
+| Search Bar| [Search Bar Work](https://github.com/yqw7/dominators/issues/65)
+
+## Week 4
+
+Task | Evidence |
+| :---- | :---- | 
+| Individual Work | [Nicolas](https://github.com/yqw7/dominators/issues/53) |
+| Individual Work | [Calissa](https://github.com/yqw7/dominators/issues/54) |
+| Individual Work | [Ethan](https://github.com/yqw7/dominators/issues/56) |
+| Individual Work | Isabella |
+| Individual Work | [Hassan](https://github.com/yqw7/dominators/issues/61) |
 
 ## Plan for work until week after Winter Break
 
 Add webpages to website with key technicals implemented, prepare for presentations on week 3 with BOF completed
+
 ### Week 3
 
 Task | Evidence |
 | :---- | :---- | 
 | Design Manager showing Bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | (www.delp.rocks), Front End 1 [Link](https://github.com/yqw7/dominators/blob/main/static/Screen%20Shot%202021-12-16%20at%2012.10.23%20PM.png?raw=true), Front End 1 Source [Link](https://github.com/yqw7/dominators/blob/main/templates/walruses.html), Front End 2 [Link](https://github.com/yqw7/dominators/blob/main/static/Screen%20Shot%202021-12-16%20at%2012.10.02%20PM.png?raw=true), Front End 3 [Link](https://github.com/yqw7/dominators/blob/main/static/Screen%20Shot%202021-12-16%20at%2012.09.45%20PM.png?raw=true), Layouts [Link](https://github.com/yqw7/dominators/blob/main/templates/layouts/layouts.html)|
-| Scrum Master overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki.  Show expected backlog when returning from Winter Break. | Completed by Nicolas: [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1), [Dominators Wiki](https://github.com/yqw7/dominators/wiki), [README](https://github.com/yqw7/dominators#readme)
+| Scrum Master overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki  Show expected backlog when returning from Winter Break. | Completed by Nicolas: [Dominators Scrum Board](https://github.com/yqw7/dominators/projects/1), [Dominators Wiki](https://github.com/yqw7/dominators/wiki), [README](https://github.com/yqw7/dominators#readme)
 | Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). | Completed by Ethan: [Pull Request](https://github.com/yqw7/dominators/pull/48), accessed on [www.delp.rocks/crud](www.delp.rocls/crud/) The code that allows the crud to work [crud.html](https://github.com/yqw7/dominators/blob/main/crud/templates/crud.html) [search.html](https://github.com/yqw7/dominators/blob/main/crud/templates/search.html) [model.py](https://github.com/yqw7/dominators/blob/main/crud/model.py) [app_crud](https://github.com/yqw7/dominators/blob/main/crud/app_crud.py) Part of the Database ![image](https://user-images.githubusercontent.com/89167174/146322748-0ce3288c-f76f-4a7b-b0bb-abf070b5d23e.png)|
 | Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | Completed by Hassan: (www.delp.rocks), demonstrated process in live review|
 | GitHub admin highlighting commits and pull requests completed by each individual. |![image](https://user-images.githubusercontent.com/89166884/145882689-91278e0c-487a-4edd-8014-3d058a839d05.png)
