@@ -33,6 +33,7 @@ Task | Evidence |
 | Async Operation - runtime and under the hood usage of JavaScript and Fetch | 
 | CRUD in Database - runtime and behind the scenes using CRUD operations | [CRUD Database Work](https://github.com/yqw7/dominators/issues/64)|
 | Extra Credit work| ![image](https://user-images.githubusercontent.com/89167131/149403016-fc5e6a79-c27c-4985-a55c-ce0d48fbc420.png)|
+| Search Bar| [Search Bar Work](https://github.com/yqw7/dominators/issues/65)
 
 ## Week 4
 
