@@ -19,7 +19,7 @@ Name | Github Profile | Journal Links | Role | Commits |
 
 ## Policies 
 
-Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" collumns to track task progress.
+Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" columns to track task progress.
 
 ## Time Box
 
