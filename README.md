@@ -30,7 +30,7 @@ Task | Evidence |
 | Demo of PBL key features| [Login Page](https://github.com/yqw7/dominators/issues/19), [Class Rating/Overview](https://www.delp.rocks/hawkers/), [Profile](https://www.delp.rocks/kangaroos/), [Class List](https://github.com/yqw7/dominators/blob/main/templates/ethan/sandbox.html)
 | Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) | -PBL: [Project](delp.rocks) -Github Pages / Jekyll: [Pages](https://yqw7.github.io/dominators/)
 | Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | [CSS usage](https://github.com/yqw7/dominators/issues/63)
-| Async Operation - runtime and under the hood usage of JavaScript and Fetch | 
+| Async Operation - runtime and under the hood usage of JavaScript and Fetch | [Async CRUD Work](https://github.com/yqw7/dominators/issues/66)
 | CRUD in Database - runtime and behind the scenes using CRUD operations | [CRUD Database Work](https://github.com/yqw7/dominators/issues/64)|
 | Extra Credit work| ![image](https://user-images.githubusercontent.com/89167131/149403016-fc5e6a79-c27c-4985-a55c-ce0d48fbc420.png)|
 | Search Bar| [Search Bar Work](https://github.com/yqw7/dominators/issues/65)
