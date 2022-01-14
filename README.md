@@ -28,7 +28,7 @@ Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfor
 Task | Evidence |
 | :---- | :---- | 
 | Demo of PBL key features| [Login Page](https://github.com/yqw7/dominators/issues/19)
-| Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) |
+| Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) | -PBL: [Project](delp.rocks) -Github Pages / Jekyll: [Pages](https://yqw7.github.io/dominators/)
 | Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | [CSS usage](https://github.com/yqw7/dominators/issues/63)
 | Async Operation - runtime and under the hood usage of JavaScript and Fetch | 
 | CRUD in Database - runtime and behind the scenes using CRUD operations | ![image](https://user-images.githubusercontent.com/89167131/149402810-517fd0f2-cb89-4249-a5e4-3c4af5c8f453.png)|
