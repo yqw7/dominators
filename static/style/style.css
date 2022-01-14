@@ -1,9 +1,9 @@
 /* Error: Can't find stylesheet to import.
- *    ,
- * 46 | @import "../../node_modules/bootstrap/scss/bootstrap";
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   style.scss 46:9  root stylesheet */
+ *     ,
+ * 127 | @import "node_modules/bootstrap/scss/bootstrap";
+ *     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   style.scss 127:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 46 \2502  @import \"../../node_modules/bootstrap/scss/bootstrap\";\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   style.scss 46:9  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a     \2577 \a 127 \2502  @import \"node_modules/bootstrap/scss/bootstrap\";\a     \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   style.scss 127:9  root stylesheet";
 }

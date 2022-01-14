@@ -18,7 +18,7 @@ from crud.app_crud_api import app_crud_api
 # connects default URL to render index.html
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("walruses.html")
 
 
 app.register_blueprint(app_crud)
@@ -83,9 +83,15 @@ def hawkers():
 def login():
     return render_template("login.html")
 
-@app.route('/register/')
+#@app.route('/register/')
+#def signup():
+   #return render_template("register.html")
+
+#classes
+@app.route('/apcsp/')
 def signup():
-    return render_template("register.html")
+    return render_template("classpages/apcsp.html")
+
 
 @app.route('/stub/')
 def stub():
