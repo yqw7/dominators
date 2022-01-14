@@ -29,7 +29,7 @@ Task | Evidence |
 | :---- | :---- | 
 | Demo of PBL key features| [Login Page](https://github.com/yqw7/dominators/issues/19)
 | Demo of Github Pages and Jekyll - only presenting and demonstrating using Github pages, Github and PBL web project (no IntelliJ or other IDE, no localhost) |
-| Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | ![image](https://user-images.githubusercontent.com/89167131/149403816-f1c7fa4b-07e6-4d4f-b692-f6baa24a5df8.png) ![image](https://user-images.githubusercontent.com/89167131/149403877-5bcf1234-30f3-451f-840e-df47fe4253e8.png)
+| Theme using Sassy / Bootstrap - under the hood on CSS usage and capitalizing on Bootstrap features | [CSS usage](https://github.com/yqw7/dominators/issues/63)
 | Async Operation - runtime and under the hood usage of JavaScript and Fetch | 
 | CRUD in Database - runtime and behind the scenes using CRUD operations | ![image](https://user-images.githubusercontent.com/89167131/149402810-517fd0f2-cb89-4249-a5e4-3c4af5c8f453.png)|
 | Extra Credit work| ![image](https://user-images.githubusercontent.com/89167131/149403016-fc5e6a79-c27c-4985-a55c-ce0d48fbc420.png)|
