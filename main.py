@@ -97,6 +97,10 @@ def signup():
 def stub():
     return render_template("stub.html")
 
+@app.route('/CHweek6/')
+def CHweek6():
+    return render_template("CHweek6.html")
+
 @app.route('/game', methods=['GET', 'POST'])
 def game():
     url = "http://localhost:5000/api/game"
