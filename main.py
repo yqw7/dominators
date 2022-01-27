@@ -83,23 +83,28 @@ def hawkers():
 def login():
     return render_template("login.html")
 
-#@app.route('/register/')
-#def signup():
-   #return render_template("register.html")
+@app.route('/register/')
+def signup():
+   return render_template("register.html")
 
 #classes
 @app.route('/apcsp/')
-def signup():
+def apcsp():
     return render_template("classpages/apcsp.html")
 
+@app.route('/hpoe/')
+def hpoe():
+    return render_template("classpages/hpoe.html")
+
+@app.route('/apstudioart/')
+def apstudioart():
+    return render_template("classpages/apstudioart.html")
+####
 
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
 
-@app.route('/CHweek6/')
-def CHweek6():
-    return render_template("CHweek6.html")
 
 @app.route('/game', methods=['GET', 'POST'])
 def game():
@@ -117,4 +122,4 @@ def page_not_found():
 
 # runs the application on the development server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
