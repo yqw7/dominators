@@ -2,12 +2,10 @@
 import requests
 from __init__ import app
 from redditapi import getRedditData
-
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response, Flask
 from flask_restful import Api, Resource
 from crud.model import Users
 from __init__ import app
-#from wikipedia import requests
 from templates.nicolas.gameapi import api_bp
 from crud.app_crud import app_crud
 from aboutus import aboutus
@@ -84,12 +82,11 @@ def login():
     return render_template("login.html")
 
 @app.route('/register/')
-def signup():
    return render_template("register.html")
 
 #classes
 @app.route('/apcsp/')
-def apcsp():
+def signup():
     return render_template("classpages/apcsp.html")
 
 @app.route('/hpoe/')
