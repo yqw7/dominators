@@ -39,6 +39,10 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <span id="clock"></span>
                 </div>
                 <!-- Dark mode action -->
+                <div class="form-check form-switch">
+                    <input type="checkbox" onclick="darkFunction()" class="form-check-input" id="darkSwitch">
+                    <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                </div>
             </div>
 
             {% block navbar_script %}
