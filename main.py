@@ -99,6 +99,10 @@ def apstudioart():
     return render_template("classpages/apstudioart.html")
 ####
 
+@app.route('/classes/')
+def classes():
+    return render_template("classes.html")
+
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
