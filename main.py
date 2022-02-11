@@ -81,7 +81,9 @@ def hawkers():
 def login():
     return render_template("login.html")
 
+
 @app.route('/register/', methods=["GET", "POST"])
+
 def register():
    return render_template("register.html")
 
@@ -98,6 +100,10 @@ def hpoe():
 def apstudioart():
     return render_template("classpages/apstudioart.html")
 ####
+
+@app.route('/classes/')
+def classes():
+    return render_template("classes.html")
 
 @app.route('/stub/')
 def stub():
