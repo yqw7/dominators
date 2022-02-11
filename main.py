@@ -27,7 +27,11 @@ app.register_blueprint(app_crud_api)
 def postoftheday():
     return render_template("postoftheday.html", rdata=getRedditData())
 
-class_list = ["ap chem", "ap calc AB", "ap calc BC", "ap stats", "ap bio", "ap european history" ]
+class_list = []
+f = open("class_list.txt", "r")
+for x in f:
+    class_list.append(x)
+
 def search_word(word):
     found_classes = []
     for i in class_list:
@@ -48,6 +52,10 @@ def sandbox():
         # starting and empty input default
     return render_template("ethan/sandbox.html", class_list=class_list, name=" ")
 
+@app.route('/ethan Create Task/')
+def ethan_create_task():
+    return render_template("/ethan/ethan_create_task.html")
+
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
@@ -55,21 +63,22 @@ def kangaroos():
     return render_template("kangaroos.html")
 
 
-@app.route('/walruses', methods=['GET', 'POST'])
+@app.route('/walruses/', methods=['GET', 'POST'])
 def walruses():
     defaultURL = "walruses.html"
     if request.form:
-        search_word = request.form.get("name")
+        search_name = request.form.get("name")
+        searched = search_word(search_name)
         name_list = ["ethan", "nicolas", "hassan", "calissa", "isabella"]
         url_list = ['ethan/Ethan.html', 'nicolas/nicolas.html', 'abouthassan.html', 'calissa.html', 'isabella.html']
         try:
-            name_index = name_list.index(search_word)
-            if len(search_word) != 0 and name_index >= 0:  # input field has content
-                return render_template(url_list[name_index])
+            # name_index = name_list.index(search_name)
+            if len(search_name) != 0:  # input field has content
+                return render_template(defaultURL, class_list1=class_list, name=searched)
         except:
             return render_template("404.html")
     # starting and empty input default
-    return render_template(defaultURL)
+    return render_template(defaultURL, class_list1=class_list, name=" ")
 
 
  

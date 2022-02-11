@@ -1,15 +1,15 @@
 english 1-2 
 honors english 1-2 
 english 3-4 
-honors humanites 1-2 
+honors humanities 1-2
 american literature 1-2 
 ap english language 1-2 
 expository reading and writing 
 ethnic literature 1-2 
 world literature 1-2 
 ap english literature 1-2 
-integreated 1a-1b 
-integreated 2a-2b 
+integrated 1a-1b
+integrated 2a-2b
 integrated 3a-3b 
 trigonometry 
 advance functional analysis 1-2
@@ -23,7 +23,7 @@ chem of earth 1-2
 physics of universe 1-2 
 ap bio 
 ap chem 
-ap enviromental science 
+ap environmental science
 ap physics mechanics 
 ap physics electricity and magnetism 
 principles of biomedical sciences 
@@ -35,7 +35,7 @@ US history
 ap US history 
 civics 
 economics 
-ap US governement and politics 
+ap US government and politics
 chinese 1-2 
 chinese 3-4
 chinese 5-6
@@ -90,16 +90,12 @@ photography 3-4
 photography 5-6 
 wind ensemble 
 orchestra 
-ap music theory 
-harmony 
+ap music theory
 avid 1-2 
 avid 3-4 
-avid 5-6 
-avid senior seminar 
-child development and pyschology 
-ap computer science principles 
-data structures 1 
-data structures 2 
+avid 5-6
+child development and psychology
+ap computer science principles
 ap computer science A 
 robotics 
 intro to engineering design 

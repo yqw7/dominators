@@ -1,5 +1,7 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
+<!-- Extending the project layout, as this file will do minor customizations -->
 {% extends "layouts/layouts.html" %}
+{% set class_number = class_list1|length %}
 
 {% block content %}
     <img class="center" src="https://github.com/yqw7/dominators/blob/main/static/delnorte.jpeg?raw=true"/>
@@ -23,17 +25,6 @@
                     transform: translate(-50%, -50%);
                 }
 
-               table{
-                   border-collapse: separate;
-                   border-spacing:90px;
-               }
-
-               th{
-                   padding: 10px;
-               }
-
-
-
 
 
             </style>
@@ -42,75 +33,32 @@
             <div class="container">
                 <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
                     <div class="col-12">
-                        <form action="/walruses" id="hello" method="POST">
-                            <label for="name">Search for somebody?</label>
-                            <input name="name" id="name">
+                        <form action="/walruses/" id="hello2" method="POST">
+                            <label for="name">What class do you want to search for?</label>
+                            <input name="name" id="name2">
                             <input type="submit" value="Search">
                         </form>
 
-
+                        <p> The class you are looking for is {{name}}</p>
                     </div>
                 </div>
             </div>
+            <table style="border-collapse: collapse; border: 1px solid black;">
+                <tr style="border-collapse: collapse; border: 1px solid black;">
+                    <th style="height:30px;width:400px;text-align:center;">
+                        Class List
+                    </th>
+                </tr>
+                {% for i in range(class_number) %}
+                <tr style="border-collapse: collapse; border: 1px solid black;">
+                    <td style="text-align:center;">
+                        {{ class_list1[i] }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
 
-            <div class="container bg-light searchBar" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%; opacity:0.8">
-                <div class="box"; style="padding: 2px 16px;">
-                    <input type="text" class="form-control" id="term" placeholder="enter search term">
-                    <label></label> <!-- spacer -->
-                    <button class=fw-bold" style="opacity:1.0" onclick="search();">Search</button>
-                </div>
-            </div>
-
-
-            <div class="container">
-                <div class="row" id="result"></div>
-            </div>
-
-        </div>
-    <div class="card center bg-light" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width:80%;">
-        <h2 class="ps-5 pt-3">Reccomendations</h2>
-
-    <table>
-        <th>
-        <!--AP CSP -->
-        <div class="card center py-3 bg-secondary" style="width:250px; height:150px;">
-            <a href="/apcsp">
-                <img src="https://github.com/yqw7/dominators/blob/main/static/apcspphotos/Screen%20Shot%202022-01-13%20at%209.49.00%20PM.png?raw=true" style="width:250px; height:155px;">
-            </a>
-        </div>
-        <div class="card center text-dark text-py-3" style="width:252px; height:50px;">
-            <p class="text-fw-bold">AP Computer Science Principles</p>
-        </div>
-        </th>
-
-        <th>
-        <!--HPOE -->
-        <div class="card py-3 bg-secondary" style="width:250px; height:150px">
-            <a href="/hpoe">
-                <img src="https://github.com/yqw7/dominators/blob/main/static/hpoe.png?raw=true" style="width:250px; height:155px;">
-            </a>
-        </div>
-        <div class="card text-dark text-py-3" style="width:252px; height:50px;">
-            <p class="text-fw-bold">Honors Principles of Engineering</p>
-        </div>
-        </th>
-
-        <th>
-        <!--AP Studio Art -->
-        <div class="card py-3 bg-secondary" style="width:250px; height:150px;">
-                <a href="/apstudioart">
-                    <img src="https://github.com/yqw7/dominators/blob/main/static/APSAr.png?raw=true" style="width:250px; height:155px;">
-                </a>
-        </div>
-        <div class="card text-dark text-py-3" style="width:252px; height:50px;">
-            <p class="text-fw-bold">AP Studio Art</p>
-        </div>
-        </th>
-    </table>
-
-    </div>
-
-    <script>
+        <script>
             function search() {
                 // fetch standard requires data set to a name-value pair
                 const term = document.getElementById("term");
