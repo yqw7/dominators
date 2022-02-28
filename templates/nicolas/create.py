@@ -66,7 +66,7 @@ def find_class():
             print("You should take" + " " + classes[2] + ",", classes[3])
 
 if __name__ == "__main__":
-    while (repeat > 1):
+    while (repeat > 0):
         find_class()
         repeat = repeat - 1
         if (repeat == 0):
