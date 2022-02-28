@@ -94,7 +94,7 @@ def login():
 @app.route('/register/', methods=["GET", "POST"])
 
 def register():
-   return render_template("register.html")
+  return render_template("register.html")
 
 #classes
 @app.route('/apcsp/')
@@ -132,6 +132,11 @@ app.register_blueprint(api_bp)
 def page_not_found():
     # note that we set the 404 status explicitly
     return render_template('404.html')
+
+@app.route('/quiz')
+def quiz():
+    return render_template("quiz.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":

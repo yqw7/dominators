@@ -21,6 +21,10 @@ Name | Github Profile | Journal Links | Role | Commits |
 
 Scrum Board: Kanban is the Scrum Board style that our team uses and feels comfortable using as a way to organize and delegate project work, commits, and issues. Kanban is basic and simple to understand as it uses "To do", "In progress", and "Completed" columns to track task progress.
 
+**PBL Theme (consistent throughout project)**
+
+Our PBL theme constructed through our css file is directed toward a Del Norte color scheme as our project is all about Del Norte. We used light blue and a white color as our main colors for backgrounds, text color, and navbar.
+
 ## Time Box
 
 ### Week 6
